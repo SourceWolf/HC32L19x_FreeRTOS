@@ -27,7 +27,7 @@ void Hd_ADC_init(void)
     stcAdcCfg.enAdcRefVolSel    = AdcMskRefVolSelAVDD;      ///<参考电压选择-VCC
     stcAdcCfg.enAdcOpBuf        = AdcMskBufEnable;         ///<OP BUF配置-关
     stcAdcCfg.enInRef           = AdcMskInRefDisable;       ///<内部参考电压使能-关
-    stcAdcCfg.enAdcAlign        = AlignRight;            ///<转换结果对齐方式-右
+    stcAdcCfg.enAdcAlign        = AdcAlignRight;            ///<转换结果对齐方式-右
     Adc_Init(&stcAdcCfg);  
     
     
@@ -37,7 +37,7 @@ void Hd_ADC_init(void)
 //    stcAdcSqrCfg.enResultAcc = AdcResultAccDisable;
 //    stcAdcSqrCfg.u8SqrCnt    = 16;
 //    Adc_SqrModeConfig(&stcAdcSqrCfg);
-    Adc_ConfigSglChannel(AdcExInputCH15);
+    Adc_CfgSglChannel(AdcExInputCH15);
 //    ///< 配置顺序扫描转换通道
 //    Adc_ConfigSqrChannel(SQRCH15MUX, AdcExInputCH15);
     

@@ -70,6 +70,7 @@
 
 #ifndef PORTMACRO_H
 #define PORTMACRO_H
+#include "ddl.h"
 
 #ifdef __cplusplus
 extern "C" {

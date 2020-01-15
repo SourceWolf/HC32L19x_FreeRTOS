@@ -106,7 +106,7 @@
 #define configUSE_16_BIT_TICKS                   0
 #define configUSE_MUTEXES                        1
 #define configQUEUE_REGISTRY_SIZE                8
-#define configUSE_TICKLESS_IDLE                  0
+#define configUSE_TICKLESS_IDLE                  1
 
 /* Co-routine definitions. */
 #define configUSE_CO_ROUTINES                    0

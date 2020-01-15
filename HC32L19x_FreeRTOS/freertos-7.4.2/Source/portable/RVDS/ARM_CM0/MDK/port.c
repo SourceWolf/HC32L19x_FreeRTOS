@@ -574,20 +574,22 @@ void SetSleepTime(uint32_t ms)
 TickType_t HC32F46x_freertos_sleep(TickType_t xExpectedIdleTime)
 {
     SetSleepTime(xExpectedIdleTime);
+    //添加睡眠设置
 //    if(Flag_Sleep == 1)
 //    {
 //        Flag_Sleep = 0;
-        M4_TMR01->CMPAR_f.CMPA = Timer0_value;//设置周期
-        M4_TMR01->CNTAR_f.CNTA = 0;//定时器清零
-        M4_TMR01->BCONR_f.CKDIVA = Division;//分频数
-        TIMER0_Cmd(M4_TMR01, Tim0_ChannelA, Enable);//启动Timer定时。
-        System_Enter_StopMode();       
+//        M4_TMR01->CMPAR_f.CMPA = Timer0_value;//设置周期
+//        M4_TMR01->CNTAR_f.CNTA = 0;//定时器清零
+//        M4_TMR01->BCONR_f.CKDIVA = Division;//分频数
+//        TIMER0_Cmd(M4_TMR01, Tim0_ChannelA, Enable);//启动Timer定时。
+//        System_Enter_StopMode();       
 //    }    
 //    return 0;
 }
 void HC32F46x_freertos_wakeup(TickType_t xExpectedIdleTime)
 {
-    SysTick_Config(48000);//48MHZ
+    //恢复RTC
+//    SysTick_Config(48000);//48MHZ
     return;
 }
 #endif /* configASSERT_DEFINED */

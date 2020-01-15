@@ -19,8 +19,8 @@ void Uart1_IRQHandler(void)
 en_result_t Hd_uart1_init(void)
 {
     en_result_t Res;
-    stc_uart_config_t    stcCfg;
-    stc_gpio_config_t stcGpioCfg;
+    stc_uart_cfg_t    stcCfg;
+    stc_gpio_cfg_t stcGpioCfg;
     
     DDL_ZERO_STRUCT(stcCfg);    
     DDL_ZERO_STRUCT(stcGpioCfg);

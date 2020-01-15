@@ -2,7 +2,7 @@
 
 void Port_init(void)
 {
-    stc_gpio_config_t stcGpioCfg;
+    stc_gpio_cfg_t stcGpioCfg;
 
     ///< 打开GPIO外设时钟门控
     Sysctrl_SetPeripheralGate(SysctrlPeripheralGpio, TRUE);
@@ -20,10 +20,10 @@ void Port_init(void)
     stcGpioCfg.enCtrlMode = GpioAHB;
 
     ///< GPIO IO LED端口初始化
-    Gpio_Init(EVB_LEDR_PORT, EVB_LEDR_PIN, &stcGpioCfg);
-    Gpio_Init(EVB_LEDY_PORT, EVB_LEDY_PIN, &stcGpioCfg);
-    Gpio_Init(EVB_LEDG_PORT, EVB_LEDG_PIN, &stcGpioCfg);
-    Gpio_Init(EVB_LEDB_PORT, EVB_LEDB_PIN, &stcGpioCfg);
+//    Gpio_Init(EVB_LEDR_PORT, EVB_LEDR_PIN, &stcGpioCfg);
+//    Gpio_Init(EVB_LEDY_PORT, EVB_LEDY_PIN, &stcGpioCfg);
+//    Gpio_Init(EVB_LEDG_PORT, EVB_LEDG_PIN, &stcGpioCfg);
+//    Gpio_Init(EVB_LEDB_PORT, EVB_LEDB_PIN, &stcGpioCfg);
     ///< GPIO IO PA01初始化
     Gpio_Init(GpioPortA, GpioPin1, &stcGpioCfg);
     ///< GPIO IO PB00初始化
@@ -33,7 +33,7 @@ void Port_init(void)
     Gpio_SetAfMode(GpioPortB, GpioPin0, GpioAf7);
     
     ///< 设置HCLK从PA01输出
-    Gpio_SfHClkOutputConfig(GpioSfHclkOutEnable, GpioSfHclkOutDiv1);
+    Gpio_SfHClkOutputCfg(GpioSfHclkOutEnable, GpioSfHclkOutDiv1);
     Gpio_SetAfMode(GpioPortA, GpioPin1, GpioAf6);
     
     

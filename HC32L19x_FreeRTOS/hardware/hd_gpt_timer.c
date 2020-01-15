@@ -8,13 +8,13 @@ void Tim3_IRQHandler(void)
     {
         if(0 == i)
         {
-            Gpio_SetIO(EVB_LEDY_PORT, EVB_LEDY_PIN);
+//            Gpio_SetIO(EVB_LEDY_PORT, EVB_LEDY_PIN);
             Adc_SGL_Start();
             i++;
         }
         else
         {
-            Gpio_ClrIO(EVB_LEDY_PORT, EVB_LEDY_PIN);
+//            Gpio_ClrIO(EVB_LEDY_PORT, EVB_LEDY_PIN);
             i = 0;
         }       
         Tim3_ClearIntFlag(Tim3UevIrq);
@@ -25,7 +25,7 @@ void Timer3_config(void)
 {
     uint16_t                    u16ArrValue;
     uint16_t                    u16CntValue;
-    stc_tim3_mode0_config_t     stcTim3BaseCfg;
+    stc_tim3_mode0_cfg_t     stcTim3BaseCfg;
     
     DDL_ZERO_STRUCT(stcTim3BaseCfg);
     
@@ -55,7 +55,7 @@ void Timer3_config(void)
     Tim3_Mode0_EnableIrq();                                 //使能TIM3中断(模式0时只有一个中断)
     EnableNvic(TIM3_IRQn, IrqLevel3, TRUE);                 //TIM3 开中断 
 //    Sysctrl_SetPeripheralGate(SysctrlPeripheralTim3, FALSE);
-    M0P_SYSCTRL->OVCK_CR_f.OVCK = 1;//使用双倍频
+//    M0P_SYSCTRL->OVCK_CR_f.OVCK = 1;//使用双倍频
     Tim3_M0_Run();                                          //TIM3 运行。
 }
 

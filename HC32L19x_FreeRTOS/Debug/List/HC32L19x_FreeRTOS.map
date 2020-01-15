@@ -1,0 +1,452 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  10/Jan/2020  17:28:00
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Exe\HC32L19x_FreeRTOS.out
+#    Map file     =  
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\List\HC32L19x_FreeRTOS.map
+#    Command line =  
+#        -f C:\Users\User\AppData\Local\Temp\EW1C6A.tmp
+#        (C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\adc.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\adt.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\aes.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\app_task.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\bgr.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\bt.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\cmsis_os.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\crc.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\croutine.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\dac.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\ddl.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\debug.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\dmac.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\event_groups.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\flash.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\gpio.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\heap_4.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\i2c.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\interrupts_hc32l19x.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\lcd.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\list.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\lpm.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\lptim.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\lpuart.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\lvd.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\main.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\opa.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\pca.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\pcnt.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\port.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\portasm.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\queue.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\ram.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\reset.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\rtc.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\spi.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\startup_hc32l19x.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\sysctrl.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\system_hc32l19x.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\tasks.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\timer3.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\timers.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\trim.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\trng.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\uart.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\vc.o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj\wdt.o
+#        --no_out_extension -o
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Exe\HC32L19x_FreeRTOS.out
+#        --map
+#        C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\List\HC32L19x_FreeRTOS.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.1\arm\CONFIG\generic_cortex.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0M, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xc0
+  .intvec            ro code          0x0    0xc0  startup_hc32l19x.o [1]
+                                   - 0xc0    0xc0
+
+"P1":                                      0x14fc
+  .text              ro code         0xc0   0x60c  tasks.o [1]
+  .text              ro code        0x6cc   0x224  heap_4.o [1]
+  .text              ro code        0x8f0    0x98  list.o [1]
+  .text              ro code        0x988    0xec  port.o [1]
+  CODE               ro code        0xa74    0x7c  portasm.o [1]
+  .text              ro code        0xaf0   0x554  sysctrl.o [1]
+  .text              ro code       0x1044    0x5a  system_hc32l19x.o [1]
+  .text              ro code       0x109e    0x3a  zero_init3.o [3]
+  .text              ro code       0x10d8    0x86  ABImemcpy.o [3]
+  .text              ro code       0x1160    0x24  ddl.o [1]
+  .text              ro code       0x1184    0x28  data_init.o [3]
+  .text              ro code       0x11ac   0x174  main.o [1]
+  .text              ro code       0x1320    0x2c  flash.o [1]
+  .text              ro code       0x134c    0x3c  app_task.o [1]
+  .text              ro code       0x1388   0x130  interrupts_hc32l19x.o [1]
+  .text              ro code       0x14b8    0x2c  copy_init3.o [3]
+  .text              ro code       0x14e4    0x28  startup_hc32l19x.o [1]
+  .iar.init_table    const         0x150c    0x24  - Linker created -
+  .text              ro code       0x1530    0x1e  cmain.o [3]
+  .text              ro code       0x154e     0x4  exit.o [2]
+  .text              ro code       0x1554     0xa  cexit.o [3]
+  .text              ro code       0x1560    0x14  exit.o [4]
+  .rodata            const         0x1574    0x14  sysctrl.o [1]
+  .rodata            const         0x1588     0xc  app_task.o [1]
+  .text              ro code       0x1594     0xc  cstartup_M.o [3]
+  .rodata            const         0x15a0     0x8  tasks.o [1]
+  Initializer bytes  const         0x15a8     0x8  <for P2-1>
+  .rodata            const         0x15b0     0x4  heap_4.o [1]
+  .rodata            const         0x15b4     0x4  sysctrl.o [1]
+  .text              ro code       0x15b8     0x4  startup_hc32l19x.o [1]
+  .rodata            const         0x15bc     0x0  zero_init3.o [3]
+  .rodata            const         0x15bc     0x0  copy_init3.o [3]
+                                 - 0x15bc  0x14fc
+
+"P2", part 1 of 3:                            0x8
+  P2-1                        0x2000'0000     0x8  <Init block>
+    .data            inited   0x2000'0000     0x4  port.o [1]
+    .data            inited   0x2000'0004     0x4  system_hc32l19x.o [1]
+                            - 0x2000'0008     0x8
+
+"P2", part 2 of 3:                          0xd50
+  .bss               zero     0x2000'0008   0xc00  heap_4.o [1]
+  .bss               zero     0x2000'0c08    0x8c  tasks.o [1]
+  .bss               zero     0x2000'0c94    0x14  tasks.o [1]
+  .bss               zero     0x2000'0ca8    0x14  tasks.o [1]
+  .bss               zero     0x2000'0cbc    0x14  tasks.o [1]
+  .bss               zero     0x2000'0cd0    0x14  tasks.o [1]
+  .bss               zero     0x2000'0ce4    0x14  tasks.o [1]
+  .bss               zero     0x2000'0cf8     0x8  heap_4.o [1]
+  .bss               zero     0x2000'0d00     0x4  app_task.o [1]
+  .bss               zero     0x2000'0d04     0x4  heap_4.o [1]
+  .bss               zero     0x2000'0d08     0x4  heap_4.o [1]
+  .bss               zero     0x2000'0d0c     0x4  heap_4.o [1]
+  .bss               zero     0x2000'0d10     0x4  heap_4.o [1]
+  .bss               zero     0x2000'0d14     0x4  main.o [1]
+  .bss               zero     0x2000'0d18     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d1c     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d20     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d24     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d28     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d2c     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d30     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d34     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d38     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d3c     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d40     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d44     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d48     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d4c     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d50     0x4  tasks.o [1]
+  .bss               zero     0x2000'0d54     0x1  sysctrl.o [1]
+                            - 0x2000'0d55   0xd4d
+
+"P2", part 3 of 3:                          0x400
+  CSTACK                      0x2000'0d58   0x400  <Block>
+    CSTACK           uninit   0x2000'0d58   0x400  <Block tail>
+                            - 0x2000'1158   0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0x15bc     0x7'ffff  0x7'ea44
+  0x2000'1158  0x2000'ffff    0xeea8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xd4d:
+          0x2000'0008  0xd4d
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x8:
+               0x15a8    0x8
+    1 destination range, total size 0x8:
+          0x2000'0000    0x8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+command line/config:
+    ------------------------------------------------
+    Total:
+
+C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj: [1]
+    app_task.o                  60       12        4
+    ddl.o                       36
+    flash.o                     44
+    heap_4.o                   548        4    3 096
+    interrupts_hc32l19x.o      304
+    list.o                     152
+    main.o                     372                 4
+    port.o                     236        4        4
+    portasm.o                  124
+    startup_hc32l19x.o         236
+    sysctrl.o                1 364       24        1
+    system_hc32l19x.o           90        4        4
+    tasks.o                  1 548        8      300
+    ------------------------------------------------
+    Total:                   5 114       56    3 413
+
+dl7M_tln.a: [2]
+    exit.o                       4
+    ------------------------------------------------
+    Total:                       4
+
+rt7M_tl.a: [3]
+    ABImemcpy.o                134
+    cexit.o                     10
+    cmain.o                     30
+    copy_init3.o                44
+    cstartup_M.o                12
+    data_init.o                 40
+    zero_init3.o                58
+    ------------------------------------------------
+    Total:                     328
+
+shb_l.a: [4]
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
+
+    Gaps                         6
+    Linker created                       36    1 024
+----------------------------------------------------
+    Grand Total:             5 472       92    4 437
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base        0x150c          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x1530          --   Gb  - Linker created -
+?main                        0x1531         Code  Gb  cmain.o [3]
+ADC_DAC_IRQHandler           0x146d    0xc  Code  Gb  interrupts_hc32l19x.o [1]
+CLKTRIM_IRQHandler           0x14b1    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+CSTACK$$Base            0x2000'0d58          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1158          --   Gb  - Linker created -
+DMAC_IRQHandler              0x13c1    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+FLASH_RAM_IRQHandler         0x14a5    0xc  Code  Gb  interrupts_hc32l19x.o [1]
+Flash_WaitCycle              0x1321   0x22  Code  Gb  flash.o [1]
+HardFault_Handler            0x1389   0x10  Code  Gb  interrupts_hc32l19x.o [1]
+Hd_Test_Task            0x2000'0d00    0x4  Data  Gb  app_task.o [1]
+I2C0_IRQHandler              0x1409    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+I2C1_IRQHandler              0x1411    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+LCD_IRQHandler               0x149d    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+LPTIM0_1_IRQHandler          0x1431    0xc  Code  Gb  interrupts_hc32l19x.o [1]
+LPUART0_IRQHandler           0x13e9    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+LPUART1_IRQHandler           0x13f1    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+LVD_IRQHandler               0x1495    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+PCA_IRQHandler               0x1455    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+PCNT_IRQHandler              0x1479    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+PORTA_IRQHandler             0x1399    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+PORTB_IRQHandler             0x13a1    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+PORTC_E_IRQHandler           0x13a9    0xc  Code  Gb  interrupts_hc32l19x.o [1]
+PORTD_F_IRQHandler           0x13b5    0xc  Code  Gb  interrupts_hc32l19x.o [1]
+PendSV_Handler                0xa7b         Code  Gb  portasm.o [1]
+RTC_IRQHandler               0x1465    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+Region$$Table$$Base          0x150c          --   Gb  - Linker created -
+Region$$Table$$Limit         0x1530          --   Gb  - Linker created -
+SPI0_IRQHandler              0x13f9    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+SPI1_IRQHandler              0x1401    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+SVC_Handler                   0xab9         Code  Gb  portasm.o [1]
+SetBit                       0x1161   0x24  Code  Gb  ddl.o [1]
+SysTick_Config               0x124b   0x2e  Code  Lc  main.o [1]
+SysTick_Handler               0xa21   0x20  Code  Gb  port.o [1]
+Sysctrl_ClkInit               0xe1f   0x6c  Code  Gb  sysctrl.o [1]
+Sysctrl_ClkSourceEnable
+                              0xb03  0x114  Code  Gb  sysctrl.o [1]
+Sysctrl_GetHClkFreq           0xccb  0x154  Code  Gb  sysctrl.o [1]
+Sysctrl_SetHCLKDiv            0xf77   0x18  Code  Gb  sysctrl.o [1]
+Sysctrl_SetPCLKDiv            0xf8f   0x18  Code  Gb  sysctrl.o [1]
+Sysctrl_SetPLLFreq            0xea1   0xc0  Code  Gb  sysctrl.o [1]
+Sysctrl_SetPLLStableTime
+                              0xc93   0x16  Code  Gb  sysctrl.o [1]
+Sysctrl_SetPeripheralGate
+                              0xfa7   0x4a  Code  Gb  sysctrl.o [1]
+Sysctrl_SetRCHTrim            0xe8b   0x16  Code  Gb  sysctrl.o [1]
+Sysctrl_SetRCLStableTime
+                              0xc67   0x16  Code  Gb  sysctrl.o [1]
+Sysctrl_SetRCLTrim            0xf61   0x16  Code  Gb  sysctrl.o [1]
+Sysctrl_SetXTHStableTime
+                              0xc51   0x16  Code  Gb  sysctrl.o [1]
+Sysctrl_SetXTLStableTime
+                              0xc7d   0x16  Code  Gb  sysctrl.o [1]
+Sysctrl_SysClkSwitch          0xca9   0x22  Code  Gb  sysctrl.o [1]
+Sysctrl_XTHDriverCfg          0xc17   0x16  Code  Gb  sysctrl.o [1]
+Sysctrl_XTLDriverCfg          0xc2d   0x24  Code  Gb  sysctrl.o [1]
+SystemCoreClock         0x2000'0004    0x4  Data  Gb  system_hc32l19x.o [1]
+SystemCoreClockUpdate        0x1045    0xc  Code  Gb  system_hc32l19x.o [1]
+SystemInit                   0x1051   0x28  Code  Gb  system_hc32l19x.o [1]
+TIM0_IRQHandler              0x1419    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+TIM1_IRQHandler              0x1421    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+TIM2_IRQHandler              0x1429    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+TIM3_IRQHandler              0x13c9    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+TIM4_IRQHandler              0x143d    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+TIM5_IRQHandler              0x1445    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+TIM6_IRQHandler              0x144d    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+Task_Test                    0x134d   0x14  Code  Gb  app_task.o [1]
+UART0_2_IRQHandler           0x13d1    0xc  Code  Gb  interrupts_hc32l19x.o [1]
+UART1_3_IRQHandler           0x13dd    0xc  Code  Gb  interrupts_hc32l19x.o [1]
+VC0_IRQHandler               0x1481    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+VC1_2_IRQHandler             0x1489    0xc  Code  Gb  interrupts_hc32l19x.o [1]
+WDT_IRQHandler               0x145d    0x8  Code  Gb  interrupts_hc32l19x.o [1]
+_SysctrlUnlock                0xaf1   0x12  Code  Lc  sysctrl.o [1]
+__NVIC_EnableIRQ             0x11ad   0x18  Code  Lc  main.o [1]
+__NVIC_SetPriority           0x11c5   0x86  Code  Lc  main.o [1]
+__aeabi_memcpy4              0x10d9         Code  Gb  ABImemcpy.o [3]
+__aeabi_memcpy8              0x10d9         Code  Gb  ABImemcpy.o [3]
+__cmain                      0x1531         Code  Gb  cmain.o [3]
+__exit                       0x1561   0x14  Code  Gb  exit.o [4]
+__iar_copy_init3             0x14b9   0x2c  Code  Gb  copy_init3.o [3]
+__iar_data_init3             0x1185   0x28  Code  Gb  data_init.o [3]
+__iar_program_start          0x1595         Code  Gb  cstartup_M.o [3]
+__iar_zero_init3             0x109f   0x3a  Code  Gb  zero_init3.o [3]
+__low_level_init             0x108d   0x12  Code  Gb  system_hc32l19x.o [1]
+__vector_table                  0x0         Data  Gb  startup_hc32l19x.o [1]
+_call_main                   0x153d         Code  Gb  cmain.o [3]
+_exit                        0x1555         Code  Gb  cexit.o [3]
+_main                        0x154b         Code  Gb  cmain.o [3]
+bDacPeriBac             0x2000'0d54    0x1  Data  Lc  sysctrl.o [1]
+clk_data                0x2000'0d14    0x4  Data  Gb  main.o [1]
+exit                         0x154f    0x4  Code  Gb  exit.o [2]
+main                         0x1279   0x88  Code  Gb  main.o [1]
+os_task_init                 0x1361   0x1c  Code  Gb  app_task.o [1]
+prvAddCurrentTaskToDelayedList
+                              0x63d   0x5a  Code  Lc  tasks.o [1]
+prvAddNewTaskToReadyList
+                              0x1cf   0x8c  Code  Lc  tasks.o [1]
+prvCheckTasksWaitingTermination
+                              0x581   0x4e  Code  Lc  tasks.o [1]
+prvDeleteTCB                  0x5cf   0x12  Code  Lc  tasks.o [1]
+prvHeapInit                   0x817   0x5e  Code  Lc  heap_4.o [1]
+prvIdleTask                   0x519   0x16  Code  Lc  tasks.o [1]
+prvInitialiseNewTask          0x131   0x9e  Code  Lc  tasks.o [1]
+prvInitialiseTaskLists        0x52f   0x52  Code  Lc  tasks.o [1]
+prvInsertBlockIntoFreeList
+                              0x875   0x5e  Code  Lc  heap_4.o [1]
+prvResetNextTaskUnblockTime
+                              0x5e1   0x28  Code  Lc  tasks.o [1]
+prvTaskExitError              0x9a5   0x12  Code  Lc  port.o [1]
+pvPortMalloc                  0x6cd   0xf0  Code  Gb  heap_4.o [1]
+pxCurrentTCB            0x2000'0d18    0x4  Data  Gb  tasks.o [1]
+pxDelayedTaskList       0x2000'0d1c    0x4  Data  Lc  tasks.o [1]
+pxEnd                   0x2000'0d04    0x4  Data  Lc  heap_4.o [1]
+pxOverflowDelayedTaskList
+                        0x2000'0d20    0x4  Data  Lc  tasks.o [1]
+pxPortInitialiseStack         0x989   0x1c  Code  Gb  port.o [1]
+pxReadyTasksLists       0x2000'0c08   0x8c  Data  Lc  tasks.o [1]
+ucHeap                  0x2000'0008  0xc00  Data  Lc  heap_4.o [1]
+ulSetInterruptMaskFromISR
+                              0xadd         Code  Gb  portasm.o [1]
+uxCriticalNesting       0x2000'0000    0x4  Data  Lc  port.o [1]
+uxCurrentNumberOfTasks  0x2000'0d28    0x4  Data  Lc  tasks.o [1]
+uxDeletedTasksWaitingCleanUp
+                        0x2000'0d24    0x4  Data  Lc  tasks.o [1]
+uxListRemove                  0x963   0x26  Code  Gb  list.o [1]
+uxPendedTicks           0x2000'0d38    0x4  Data  Lc  tasks.o [1]
+uxSchedulerSuspended    0x2000'0d50    0x4  Data  Lc  tasks.o [1]
+uxTaskNumber            0x2000'0d44    0x4  Data  Lc  tasks.o [1]
+uxTopReadyPriority      0x2000'0d30    0x4  Data  Lc  tasks.o [1]
+vClearInterruptMaskFromISR
+                              0xae5         Code  Gb  portasm.o [1]
+vListInitialise               0x8f1   0x1e  Code  Gb  list.o [1]
+vListInitialiseItem           0x90f    0x6  Code  Gb  list.o [1]
+vListInsert                   0x92d   0x36  Code  Gb  list.o [1]
+vListInsertEnd                0x915   0x18  Code  Gb  list.o [1]
+vPortEnterCritical            0x9f1   0x14  Code  Gb  port.o [1]
+vPortExitCritical             0xa05   0x1c  Code  Gb  port.o [1]
+vPortFree                     0x7bd   0x5a  Code  Gb  heap_4.o [1]
+vPortStartFirstTask           0xabb         Code  Gb  portasm.o [1]
+vPortYield                    0x9dd   0x12  Code  Gb  port.o [1]
+vSetMSP                       0xa75         Code  Gb  portasm.o [1]
+vTaskDelay                    0x25d   0x32  Code  Gb  tasks.o [1]
+vTaskStartScheduler           0x291   0x4c  Code  Gb  tasks.o [1]
+vTaskSuspendAll               0x2dd    0xc  Code  Gb  tasks.o [1]
+vTaskSwitchContext            0x4a9   0x6e  Code  Gb  tasks.o [1]
+xBlockAllocatedBit      0x2000'0d10    0x4  Data  Lc  heap_4.o [1]
+xDelayedTaskList1       0x2000'0c94   0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList2       0x2000'0ca8   0x14  Data  Lc  tasks.o [1]
+xFreeBytesRemaining     0x2000'0d08    0x4  Data  Lc  heap_4.o [1]
+xHeapStructSize              0x15b0    0x4  Data  Lc  heap_4.o [1]
+xIdleTaskHandle         0x2000'0d4c    0x4  Data  Lc  tasks.o [1]
+xMinimumEverFreeBytesRemaining
+                        0x2000'0d0c    0x4  Data  Lc  heap_4.o [1]
+xNextTaskUnblockTime    0x2000'0d48    0x4  Data  Lc  tasks.o [1]
+xNumOfOverflows         0x2000'0d40    0x4  Data  Lc  tasks.o [1]
+xPendingReadyList       0x2000'0cbc   0x14  Data  Lc  tasks.o [1]
+xPortStartScheduler           0x9b7   0x26  Code  Gb  port.o [1]
+xSchedulerRunning       0x2000'0d34    0x4  Data  Lc  tasks.o [1]
+xStart                  0x2000'0cf8    0x8  Data  Lc  heap_4.o [1]
+xSuspendedTaskList      0x2000'0ce4   0x14  Data  Lc  tasks.o [1]
+xTaskCreate                    0xc1   0x6e  Code  Gb  tasks.o [1]
+xTaskIncrementTick            0x3b9   0xf0  Code  Gb  tasks.o [1]
+xTaskResumeAll                0x2ed   0xca  Code  Gb  tasks.o [1]
+xTasksWaitingTermination
+                        0x2000'0cd0   0x14  Data  Lc  tasks.o [1]
+xTickCount              0x2000'0d2c    0x4  Data  Lc  tasks.o [1]
+xYieldPending           0x2000'0d3c    0x4  Data  Lc  tasks.o [1]
+
+
+[1] = C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\Debug\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+  5 472 bytes of readonly  code memory
+     92 bytes of readonly  data memory
+  4 437 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

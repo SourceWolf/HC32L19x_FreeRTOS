@@ -321,7 +321,7 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>2</wLevel>
+            <wLevel>0</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -646,6 +646,68 @@
         </Group>
         <Group>
           <GroupName>Hardware</GroupName>
+          <Files>
+            <File>
+              <FileName>hd_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_adc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_adc.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_can.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_can.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_can.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_gpio.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_gpio.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_gpt_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_gpt_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_gpt_timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_gpt_timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_pca.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_pca.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_pca.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_pca.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_uart1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_uart1.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_uart1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_uart1.h</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>

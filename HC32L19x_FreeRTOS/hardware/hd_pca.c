@@ -2,18 +2,18 @@
 
 void pca_init(void)
 {
-    stc_gpio_config_t stcGpioCfg;
-    stc_pcaconfig_t  PcaInitStruct;
+    stc_gpio_cfg_t stcGpioCfg;
+    stc_pcacfg_t  PcaInitStruct;
     Sysctrl_SetPeripheralGate(SysctrlPeripheralPca, TRUE);
-	PcaInitStruct.pca_clksrc = pca_pclkdiv32;
+	PcaInitStruct.pca_clksrc = PcaPclkdiv32;
 	PcaInitStruct.pca_cidl   = FALSE;
-	PcaInitStruct.pca_ecom   = Ecom_Enable;       //允许比较器功能
-	PcaInitStruct.pca_capp   = Capp_Disable;      //禁止上升沿捕获
-	PcaInitStruct.pca_capn   = Capn_Disable;      //禁止下降沿捕获
-	PcaInitStruct.pca_mat    = Mat_Enable;        //禁止匹配功能
-	PcaInitStruct.pca_tog    = Tog_Enable;        //禁止翻转控制功能
-	PcaInitStruct.pca_pwm    = Pwm8bit_Disable;    //使能PWM控制输出
-	PcaInitStruct.pca_epwm   = Epwm_Enable;      //禁止16bitPWM输出
+	PcaInitStruct.pca_ecom   = PcaEcomEnable;       //允许比较器功能
+	PcaInitStruct.pca_capp   = PcaCappDisable;      //禁止上升沿捕获
+	PcaInitStruct.pca_capn   = PcaCapnDisable;      //禁止下降沿捕获
+	PcaInitStruct.pca_mat    = PcaMatEnable;        //禁止匹配功能
+	PcaInitStruct.pca_tog    = PcaTogEnable;        //禁止翻转控制功能
+	PcaInitStruct.pca_pwm    = PcaPwm8bitDisable;    //使能PWM控制输出
+	PcaInitStruct.pca_epwm   = PcaEpwmEnable;      //禁止16bitPWM输出
 	PcaInitStruct.pca_ccap   = 500;
 	PcaInitStruct.pca_carr   = 1500;              //占空比(1500-500)/1500*100%
 	
