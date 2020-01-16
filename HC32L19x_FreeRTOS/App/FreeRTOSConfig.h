@@ -167,5 +167,13 @@ standard names. */
 /* USER CODE BEGIN Defines */   	      
 /* Section where parameter definitions can be added (for instance, to override default ones in FreeRTOS.h) */
 /* USER CODE END Defines */ 
+extern uint32_t HC32F19x_freertos_sleep(uint32_t);
+extern void HC32F46x_freertos_wakeup(uint32_t);
+extern void SetSleepTime(uint32_t ms);
+#define configPRE_SLEEP_PROCESSING( time ) \
+    do { \
+        (time) = HC32F19x_freertos_sleep(time); \
+    } while (0);
 
+#define configPOST_SLEEP_PROCESSING(time)    HC32F19x_freertos_wakeup(time)
 #endif /* FREERTOS_CONFIG_H */

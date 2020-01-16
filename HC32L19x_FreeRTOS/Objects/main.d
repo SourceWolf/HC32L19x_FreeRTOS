@@ -33,5 +33,7 @@
 .\objects\main.o: .\freertos-7.4.2\Source\include\queue.h
 .\objects\main.o: .\freertos-7.4.2\Source\include\semphr.h
 .\objects\main.o: .\freertos-7.4.2\Source\include\event_groups.h
+.\objects\main.o: .\hardware\hd_lptimer.h
 .\objects\main.o: .\driver\inc\flash.h
 .\objects\main.o: .\driver\inc\lpm.h
+.\objects\main.o: .\hardware\hd_deepsleep.h

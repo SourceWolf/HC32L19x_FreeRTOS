@@ -26,3 +26,4 @@
 .\objects\port.o: .\freertos-7.4.2\Source\include\mpu_wrappers.h
 .\objects\port.o: .\freertos-7.4.2\Source\include\task.h
 .\objects\port.o: .\freertos-7.4.2\Source\include\list.h
+.\objects\port.o: .\hardware\hd_deepsleep.h

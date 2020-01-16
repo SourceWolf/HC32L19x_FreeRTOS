@@ -707,6 +707,26 @@
               <FileType>5</FileType>
               <FilePath>.\hardware\hd_uart1.h</FilePath>
             </File>
+            <File>
+              <FileName>hd_lptimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_lptimer.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_lptimer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_lptimer.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_deepsleep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_deepsleep.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_deepsleep.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_deepsleep.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

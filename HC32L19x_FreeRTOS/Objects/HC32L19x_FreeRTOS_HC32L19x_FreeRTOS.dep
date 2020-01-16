@@ -1,11 +1,11 @@
 Dependencies for Project 'HC32L19x_FreeRTOS', Target 'HC32L19x_FreeRTOS': (DO NOT MODIFY !)
-F (.\App\app_task.c)(0x5E183BEE)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\app_task.o --omf_browse .\objects\app_task.crf --depend .\objects\app_task.d)
-I (App\app_task.h)(0x5E183BEE)
+F (.\App\app_task.c)(0x5E1FCC92)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\app_task.o --omf_browse .\objects\app_task.crf --depend .\objects\app_task.d)
+I (App\app_task.h)(0x5E1FC216)
 I (.\freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h)(0x5D381AB3)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -32,10 +32,13 @@ I (.\freertos-7.4.2\Source\include\timers.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\queue.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\semphr.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\event_groups.h)(0x5CFF14D2)
-F (.\App\app_task.h)(0x5E183BEE)()
+I (.\hardware\hd_lptimer.h)(0x5E1FC006)
+I (.\driver\inc\gpio.h)(0x5DB93733)
+I (.\hardware\hd_deepsleep.h)(0x5E1FCC6D)
+F (.\App\app_task.h)(0x5E1FC216)()
 F (.\App\ddl_device.h)(0x5CEA5113)()
-F (.\App\FreeRTOSConfig.h)(0x5E1D55CB)()
-F (.\App\main.c)(0x5E183D00)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\App\FreeRTOSConfig.h)(0x5E1FCA46)()
+F (.\App\main.c)(0x5E1FD48C)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\driver\inc\gpio.h)(0x5DB93733)
 I (.\driver\inc\ddl.h)(0x5DB9201F)
 I (.\mcu\common\base_types.h)(0x5D05F5F6)
@@ -54,10 +57,10 @@ I (.\mcu\common\system_hc32l19x.h)(0x5CD51EC0)
 I (.\driver\inc\sysctrl.h)(0x5DA8022E)
 I (.\mcu\common\interrupts_hc32l19x.h)(0x5DA837B7)
 I (.\App\ddl_device.h)(0x5CEA5113)
-I (App\app_task.h)(0x5E183BEE)
+I (App\app_task.h)(0x5E1FC216)
 I (.\freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h)(0x5D381AB3)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -69,13 +72,15 @@ I (.\freertos-7.4.2\Source\include\timers.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\queue.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\semphr.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\event_groups.h)(0x5CFF14D2)
+I (.\hardware\hd_lptimer.h)(0x5E1FC006)
 I (.\driver\inc\flash.h)(0x5DA802FF)
 I (.\driver\inc\lpm.h)(0x5D10B202)
+I (.\hardware\hd_deepsleep.h)(0x5E1FCC6D)
 F (.\freertos-7.4.2\Source\croutine.c)(0x5CFF14D2)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -104,7 +109,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -134,7 +139,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -162,7 +167,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -191,7 +196,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -220,7 +225,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -250,7 +255,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -273,11 +278,11 @@ I (.\App\ddl_device.h)(0x5CEA5113)
 I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
-F (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\port.c)(0x5E1D55CB)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+F (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\port.c)(0x5E1FD923)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -300,13 +305,14 @@ I (.\App\ddl_device.h)(0x5CEA5113)
 I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+I (.\hardware\hd_deepsleep.h)(0x5E1FCC6D)
 F (.\freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.c)(0x5D381AA8)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\cmsis_os.o --omf_browse .\objects\cmsis_os.crf --depend .\objects\cmsis_os.d)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h)(0x5D381AB3)
 I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (.\App\FreeRTOSConfig.h)(0x5E1D55CB)
+I (.\App\FreeRTOSConfig.h)(0x5E1FCA46)
 I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
 I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
@@ -1091,3 +1097,44 @@ I (.\App\ddl_device.h)(0x5CEA5113)
 I (.\driver\inc\uart.h)(0x5D05F301)
 I (.\driver\inc\gpio.h)(0x5DB93733)
 F (.\hardware\hd_uart1.h)(0x5DDF55EC)()
+F (.\hardware\hd_lptimer.c)(0x5E1FD4A6)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\hd_lptimer.o --omf_browse .\objects\hd_lptimer.crf --depend .\objects\hd_lptimer.d)
+I (.\driver\inc\lptim.h)(0x5D09E168)
+I (.\driver\inc\ddl.h)(0x5DB9201F)
+I (.\mcu\common\base_types.h)(0x5D05F5F6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_stkhc32l19x.h)(0x5D89E31E)
+I (.\mcu\common\hc32l19x.h)(0x5D70EBAE)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32l19x.h)(0x5CD51EC0)
+I (.\driver\inc\sysctrl.h)(0x5DA8022E)
+I (.\mcu\common\interrupts_hc32l19x.h)(0x5DA837B7)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\hardware\hd_lptimer.h)(0x5E1FC006)()
+F (.\hardware\hd_deepsleep.c)(0x5E1FD608)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\freertos-7.4.2\Source\include -I .\driver\inc -I .\hardware -I .\mcu\common -I .\App -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\CMSIS_RTOS-I.\RTE\_HC32L19x_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\hd_deepsleep.o --omf_browse .\objects\hd_deepsleep.crf --depend .\objects\hd_deepsleep.d)
+I (.\driver\inc\ddl.h)(0x5DB9201F)
+I (.\mcu\common\base_types.h)(0x5D05F5F6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_stkhc32l19x.h)(0x5D89E31E)
+I (.\mcu\common\hc32l19x.h)(0x5D70EBAE)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32l19x.h)(0x5CD51EC0)
+I (.\driver\inc\sysctrl.h)(0x5DA8022E)
+I (.\mcu\common\interrupts_hc32l19x.h)(0x5DA837B7)
+I (.\App\ddl_device.h)(0x5CEA5113)
+I (.\driver\inc\gpio.h)(0x5DB93733)
+I (.\driver\inc\lpm.h)(0x5D10B202)
+F (.\hardware\hd_deepsleep.h)(0x5E1FCC6D)()

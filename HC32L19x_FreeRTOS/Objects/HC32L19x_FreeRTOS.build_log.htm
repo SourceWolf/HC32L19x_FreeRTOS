@@ -22,16 +22,21 @@ Dialog DLL:      TARMCM1.DLL V1.14.1.0
  
 <h2>Project:</h2>
 C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS.uvprojx
-Project File Date:  01/14/2020
+Project File Date:  01/16/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'HC32L19x_FreeRTOS'
-compiling hd_gpio.c...
+compiling port.c...
+.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\portmacro.h(164): warning:  #1368-D: invalid error tag
+  #pragma diag_suppress=Pa082
+freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\port.c(591): warning:  #940-D: missing return statement at end of non-void function "HC32F19x_freertos_sleep" 
+  }
+freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\port.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=7172 RO-data=248 RW-data=124 ZI-data=4436  
+Program Size: Code=8812 RO-data=248 RW-data=124 ZI-data=4436  
 FromELF: creating hex file...
-".\Objects\HC32L19x_FreeRTOS.axf" - 0 Error(s), 0 Warning(s).
+".\Objects\HC32L19x_FreeRTOS.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -54,7 +59,7 @@ Package Vendor: HDSC
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.3.0
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

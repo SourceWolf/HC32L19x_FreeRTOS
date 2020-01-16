@@ -32,3 +32,6 @@
 .\objects\app_task.o: .\freertos-7.4.2\Source\include\queue.h
 .\objects\app_task.o: .\freertos-7.4.2\Source\include\semphr.h
 .\objects\app_task.o: .\freertos-7.4.2\Source\include\event_groups.h
+.\objects\app_task.o: .\hardware\hd_lptimer.h
+.\objects\app_task.o: .\driver\inc\gpio.h
+.\objects\app_task.o: .\hardware\hd_deepsleep.h

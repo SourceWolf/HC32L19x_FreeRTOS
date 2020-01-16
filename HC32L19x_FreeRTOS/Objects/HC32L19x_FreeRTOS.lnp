@@ -51,6 +51,8 @@
 ".\objects\hd_gpt_timer.o"
 ".\objects\hd_pca.o"
 ".\objects\hd_uart1.o"
+".\objects\hd_lptimer.o"
+".\objects\hd_deepsleep.o"
 --strict --scatter ".\Objects\HC32L19x_FreeRTOS.sct"
 --keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

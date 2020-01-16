@@ -95,30 +95,31 @@
 #include "app_task.h"
 #include "flash.h"
 #include "lpm.h"
+#include "hd_deepsleep.h"
 uint32_t clk_data;
-void App_LpIODeepSleepCfg(void)
-{    
-    //初始化IO配置(follow STK)
-    M0P_GPIO->PAADS = 0;        ///< 不用的引脚全部配置成 数字端口
-    M0P_GPIO->PBADS = 0;
-    M0P_GPIO->PCADS = 0;
-    M0P_GPIO->PDADS = 0;
-    M0P_GPIO->PEADS = 0;
-    M0P_GPIO->PFADS = 0;
-    
-    M0P_GPIO->PADIR = 0XFFFF;   ///< 不用的引脚全部配置成 输入IO
-    M0P_GPIO->PBDIR = 0XFFFF;
-    M0P_GPIO->PCDIR = 0XFFFF;
-    M0P_GPIO->PDDIR = 0XFFFF;
-    M0P_GPIO->PEDIR = 0XFFFF;
-    M0P_GPIO->PFDIR = 0XFFFF;
-    
-    //swd接口配置为gpio，注意接下来不能进行debug调试
-    M0P_SYSCTRL->SYSCTRL2 = 0X5A5A;
-    M0P_SYSCTRL->SYSCTRL2 = 0XA5A5;
-    M0P_SYSCTRL->SYSCTRL1_f.SWD_USE_IO = 1;
+//void App_LpIODeepSleepCfg(void)
+//{    
+//    //初始化IO配置(follow STK)
+//    M0P_GPIO->PAADS = 0;        ///< 不用的引脚全部配置成 数字端口
+//    M0P_GPIO->PBADS = 0;
+//    M0P_GPIO->PCADS = 0;
+//    M0P_GPIO->PDADS = 0;
+//    M0P_GPIO->PEADS = 0;
+//    M0P_GPIO->PFADS = 0;
+//    
+//    M0P_GPIO->PADIR = 0XFFFF;   ///< 不用的引脚全部配置成 输入IO
+//    M0P_GPIO->PBDIR = 0XFFFF;
+//    M0P_GPIO->PCDIR = 0XFFFF;
+//    M0P_GPIO->PDDIR = 0XFFFF;
+//    M0P_GPIO->PEDIR = 0XFFFF;
+//    M0P_GPIO->PFDIR = 0XFFFF;
+//    
+//    //swd接口配置为gpio，注意接下来不能进行debug调试
+//    M0P_SYSCTRL->SYSCTRL2 = 0X5A5A;
+//    M0P_SYSCTRL->SYSCTRL2 = 0XA5A5;
+//    M0P_SYSCTRL->SYSCTRL1_f.SWD_USE_IO = 1;
 
-}
+//}
 int32_t main(void)
 {
     stc_sysctrl_pll_cfg_t stcPLLCfg;
@@ -152,10 +153,10 @@ int32_t main(void)
     
     clk_data = Sysctrl_GetHClkFreq();
     SystemCoreClockUpdate();
-    
-//    delay1ms(5000);
-//    App_LpIODeepSleepCfg();
-//    Lpm_GotoDeepSleep(TRUE);
+    Sysctrl_ClkSourceEnable(SysctrlClkRCL,TRUE);
+    delay1ms(5000);
+//    lptim_init();
+//    System_EnterDeepsleep();
 //    while(1){;}
     SysTick_Config(clk_data/1000);
     NVIC_EnableIRQ(SysTick_IRQn);

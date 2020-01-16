@@ -74,6 +74,8 @@
 /* Scheduler includes. */
 #include "FreeRTOS.h"
 #include "task.h"
+#include "ddl.h"
+#include "hd_deepsleep.h"
 uint16_t Timer0_value;
 uint8_t Division,Flag_Sleep;
 #ifndef configSYSTICK_CLOCK_HZ
@@ -372,7 +374,7 @@ uint32_t ulPreviousMask;
 	portCLEAR_INTERRUPT_MASK_FROM_ISR( ulPreviousMask );
 }
 /*-----------------------------------------------------------*/
-
+void HC32F19x_freertos_wakeup(TickType_t xExpectedIdleTime);
 #if configUSE_TICKLESS_IDLE == 1
 
 	__weak void vPortSuppressTicksAndSleep( TickType_t xExpectedIdleTime )
@@ -442,21 +444,21 @@ uint32_t ulPreviousMask;
 			should not be executed again.  However, the original expected idle
 			time variable must remain unmodified, so a copy is taken. */
 			xModifiableIdleTime = xExpectedIdleTime;
-			configPRE_SLEEP_PROCESSING( &xModifiableIdleTime );
+			configPRE_SLEEP_PROCESSING( xModifiableIdleTime );
 			if( xModifiableIdleTime > 0 )
 			{
 				__dsb( portSY_FULL_READ_WRITE );
 				__wfi();
 				__isb( portSY_FULL_READ_WRITE );
 			}
-			configPOST_SLEEP_PROCESSING( &xExpectedIdleTime );
+			configPOST_SLEEP_PROCESSING( xExpectedIdleTime );
 
 			/* Stop SysTick.  Again, the time the SysTick is stopped for is
 			accounted for as best it can be, but using the tickless mode will
 			inevitably result in some tiny drift of the time maintained by the
 			kernel with respect to calendar time. */
 			ulSysTickCTRL = portNVIC_SYSTICK_CTRL;
-			portNVIC_SYSTICK_CTRL = ( ulSysTickCTRL & ~portNVIC_SYSTICK_ENABLE );
+//			portNVIC_SYSTICK_CTRL = ( ulSysTickCTRL & ~portNVIC_SYSTICK_ENABLE );
 
 			/* Re-enable interrupts - see comments above __disable_irq() call
 			above. */
@@ -565,31 +567,32 @@ void SetSleepTime(uint32_t ms)
     }
     Division = Div_temp;
     Timer0_value = temp;
-    if(Division > 9)
+    if(Division > 6)
     {
         return;//参数错误
     }
 //    Flag_Sleep = 1;//使能睡眠
 }
-TickType_t HC32F46x_freertos_sleep(TickType_t xExpectedIdleTime)
+TickType_t HC32F19x_freertos_sleep(TickType_t xExpectedIdleTime)
 {
     SetSleepTime(xExpectedIdleTime);
     //添加睡眠设置
-//    if(Flag_Sleep == 1)
-//    {
-//        Flag_Sleep = 0;
+    M0P_LPTIMER0->CNT_f.CNT = 0;
+    M0P_LPTIMER0->ARR_f.ARR = Timer0_value;
+    M0P_LPTIMER0->CR_f.PRS = Division;
+    M0P_LPTIMER0->CR_f.TR = 1;//启动定时器
+    System_EnterDeepsleep();
 //        M4_TMR01->CMPAR_f.CMPA = Timer0_value;//设置周期
 //        M4_TMR01->CNTAR_f.CNTA = 0;//定时器清零
 //        M4_TMR01->BCONR_f.CKDIVA = Division;//分频数
 //        TIMER0_Cmd(M4_TMR01, Tim0_ChannelA, Enable);//启动Timer定时。
 //        System_Enter_StopMode();       
-//    }    
 //    return 0;
 }
-void HC32F46x_freertos_wakeup(TickType_t xExpectedIdleTime)
+void HC32F19x_freertos_wakeup(TickType_t xExpectedIdleTime)
 {
     //恢复RTC
-//    SysTick_Config(48000);//48MHZ
+    SysTick_Config(48000);//48MHZ
     return;
 }
 #endif /* configASSERT_DEFINED */

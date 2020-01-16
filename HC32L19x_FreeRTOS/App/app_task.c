@@ -1,8 +1,11 @@
 #include "app_task.h"
-
+#include "gpio.h"
+#include "hd_deepsleep.h"
 TaskHandle_t Hd_Test_Task;
 void Task_Test(void *param)
-{    
+{
+    lptim_init();  
+    App_LowPowerModeGpioSet();    
 //    Port_init();
 //    Timer3_config();
 //    pca_init();
@@ -15,7 +18,7 @@ void Task_Test(void *param)
 //        Gpio_SetIO(EVB_LEDR_PORT, EVB_LEDR_PIN);
 //        Gpio_SetIO(EVB_LEDY_PORT, EVB_LEDY_PIN);
 //        Gpio_SetIO(EVB_LEDG_PORT, EVB_LEDG_PIN);
-//        Gpio_SetIO(EVB_LEDB_PORT, EVB_LEDB_PIN);
+        Gpio_SetIO(GpioPortD,GpioPin14);
 
         vTaskDelay(1000/portTICK_PERIOD_MS);
 
@@ -23,7 +26,7 @@ void Task_Test(void *param)
 //        Gpio_ClrIO(EVB_LEDR_PORT, EVB_LEDR_PIN);
 //        Gpio_ClrIO(EVB_LEDY_PORT, EVB_LEDY_PIN);
 //        Gpio_ClrIO(EVB_LEDG_PORT, EVB_LEDG_PIN);
-//        Gpio_ClrIO(EVB_LEDB_PORT, EVB_LEDB_PIN);
+        Gpio_ClrIO(GpioPortD, GpioPin14);
 
         vTaskDelay(1000/portTICK_PERIOD_MS);
     }
