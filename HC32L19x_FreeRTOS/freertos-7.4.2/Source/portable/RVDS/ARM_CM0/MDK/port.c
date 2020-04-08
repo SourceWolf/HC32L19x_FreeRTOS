@@ -448,7 +448,7 @@ void HC32F19x_freertos_wakeup(TickType_t xExpectedIdleTime);
 			if( xModifiableIdleTime > 0 )
 			{
 				__dsb( portSY_FULL_READ_WRITE );
-				__wfi();
+//				__wfi();
 				__isb( portSY_FULL_READ_WRITE );
 			}
 			configPOST_SLEEP_PROCESSING( xExpectedIdleTime );
@@ -458,7 +458,7 @@ void HC32F19x_freertos_wakeup(TickType_t xExpectedIdleTime);
 			inevitably result in some tiny drift of the time maintained by the
 			kernel with respect to calendar time. */
 			ulSysTickCTRL = portNVIC_SYSTICK_CTRL;
-//			portNVIC_SYSTICK_CTRL = ( ulSysTickCTRL & ~portNVIC_SYSTICK_ENABLE );
+			portNVIC_SYSTICK_CTRL = ( ulSysTickCTRL & ~portNVIC_SYSTICK_ENABLE );
 
 			/* Re-enable interrupts - see comments above __disable_irq() call
 			above. */
@@ -564,11 +564,16 @@ void SetSleepTime(uint32_t ms)
     {
         temp = temp/2;
         Div_temp++;
+				if(Div_temp == 7)
+				{
+					temp = temp/2;//
+				}
     }
     Division = Div_temp;
     Timer0_value = temp;
-    if(Division > 6)
+    if(Division > 7)
     {
+				Division = 7;
         return;//参数错误
     }
 //    Flag_Sleep = 1;//使能睡眠
@@ -578,7 +583,7 @@ TickType_t HC32F19x_freertos_sleep(TickType_t xExpectedIdleTime)
     SetSleepTime(xExpectedIdleTime);
     //添加睡眠设置
     M0P_LPTIMER0->CNT_f.CNT = 0;
-    M0P_LPTIMER0->ARR_f.ARR = Timer0_value;
+    M0P_LPTIMER0->ARR_f.ARR = 65536-(Timer0_value);
     M0P_LPTIMER0->CR_f.PRS = Division;
     M0P_LPTIMER0->CR_f.TR = 1;//启动定时器
     System_EnterDeepsleep();
@@ -592,7 +597,7 @@ TickType_t HC32F19x_freertos_sleep(TickType_t xExpectedIdleTime)
 void HC32F19x_freertos_wakeup(TickType_t xExpectedIdleTime)
 {
     //恢复RTC
-    SysTick_Config(48000);//48MHZ
+//    SysTick_Config(48000);//48MHZ
     return;
 }
 #endif /* configASSERT_DEFINED */

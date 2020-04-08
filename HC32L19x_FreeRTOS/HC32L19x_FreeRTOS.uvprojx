@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\freertos-7.4.2\Source\include;.\driver\inc;.\hardware;.\mcu\common;.\App;.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0;.\freertos-7.4.2\Source\CMSIS_RTOS</IncludePath>
+              <IncludePath>.\freertos-7.4.2\Source\include;.\driver\inc;.\hardware;.\mcu\common;.\App;.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0;.\freertos-7.4.2\Source\CMSIS_RTOS;.\Midware</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -726,6 +726,31 @@
               <FileName>hd_deepsleep.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\hardware\hd_deepsleep.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_spi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_spi.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Midware</GroupName>
+          <Files>
+            <File>
+              <FileName>NRF24L01.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Midware\NRF24L01.c</FilePath>
+            </File>
+            <File>
+              <FileName>NRF24L01.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Midware\NRF24L01.h</FilePath>
             </File>
           </Files>
         </Group>

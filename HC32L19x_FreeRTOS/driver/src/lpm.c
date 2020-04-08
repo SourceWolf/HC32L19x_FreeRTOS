@@ -95,7 +95,7 @@
 void Lpm_GotoDeepSleep(boolean_t bOnExit)
 {
     SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
-    SCB->SCR |= 1u<<bOnExit;
+    SCB->SCR |= 0u<<bOnExit;
     __WFI();
 }
 

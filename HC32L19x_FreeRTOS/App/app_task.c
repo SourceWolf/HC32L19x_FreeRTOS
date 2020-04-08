@@ -1,11 +1,14 @@
 #include "app_task.h"
 #include "gpio.h"
 #include "hd_deepsleep.h"
+#include "NRF24L01.h"
 TaskHandle_t Hd_Test_Task;
 void Task_Test(void *param)
 {
     lptim_init();  
-    App_LowPowerModeGpioSet();    
+    App_LowPowerModeGpioSet();
+	NRF24L01_Init(); 
+	NRF24L01_check();	
 //    Port_init();
 //    Timer3_config();
 //    pca_init();
@@ -14,6 +17,7 @@ void Task_Test(void *param)
 //    Uart_SendDataIt(UART1_UNIT,0x55);
     while(1)
     {
+		Test_NRF24L01_RX();
          ///< LEDµãÁÁ
 //        Gpio_SetIO(EVB_LEDR_PORT, EVB_LEDR_PIN);
 //        Gpio_SetIO(EVB_LEDY_PORT, EVB_LEDY_PIN);

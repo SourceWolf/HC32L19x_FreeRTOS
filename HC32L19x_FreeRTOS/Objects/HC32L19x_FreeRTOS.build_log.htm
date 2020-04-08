@@ -3,38 +3,38 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.28.0.0
+IDE-Version: ¦ÌVision V5.29.0.0
 Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: fda User, fda , LIC=SDA12-96PAJ-QD8KD-849S8-HME3R-ZX9XP
+License Information: Michael Micro, Micro, LIC=VGX56-DHXJW-J6GQ9-4II34-WTZ5Q-RS30W
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 6 (build 750)
 Assembler:       Armasm.exe V5.06 update 6 (build 750)
 Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
 Library Manager: ArmAr.exe V5.06 update 6 (build 750)
 Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
-CPU DLL:         SARMCM3.DLL V5.28.0.0
+CPU DLL:         SARMCM3.DLL V5.29.0.0
 Dialog DLL:      DARMCM1.DLL V1.19.2.0
-Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Target DLL:      CMSIS_AGDI.dll V1.32.0.0
 Dialog DLL:      TARMCM1.DLL V1.14.1.0
  
 <h2>Project:</h2>
-C:\03-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS.uvprojx
-Project File Date:  01/16/2020
+D:\00-githubFiles\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS\HC32L19x_FreeRTOS.uvprojx
+Project File Date:  04/08/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'HC32L19x_FreeRTOS'
-compiling port.c...
-.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\portmacro.h(164): warning:  #1368-D: invalid error tag
-  #pragma diag_suppress=Pa082
-freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\port.c(591): warning:  #940-D: missing return statement at end of non-void function "HC32F19x_freertos_sleep" 
+compiling NRF24L01.c...
+Midware\NRF24L01.c(44): warning:  #177-D: variable "u8_ctr"  was declared but never referenced
+  	uint8_t status,u8_ctr;	       
+Midware\NRF24L01.c(177): warning:  #1-D: last line of file ends without a newline
   }
-freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\port.c: 2 warnings, 0 errors
+Midware\NRF24L01.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=8812 RO-data=248 RW-data=124 ZI-data=4436  
+Program Size: Code=8544 RO-data=260 RW-data=116 ZI-data=4436  
 FromELF: creating hex file...
 ".\Objects\HC32L19x_FreeRTOS.axf" - 0 Error(s), 2 Warning(s).
 
@@ -53,13 +53,13 @@ Package Vendor: HDSC
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_HC32L19x_FreeRTOS
-  C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
-  C:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Users\Michael\AppData\Local\Arm\Packs\HDSC\HC32L19X\1.0.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.3.0
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

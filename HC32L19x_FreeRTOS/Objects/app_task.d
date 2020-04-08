@@ -16,10 +16,10 @@
 .\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
 .\objects\app_task.o: .\mcu\common\board_stkhc32l19x.h
 .\objects\app_task.o: .\mcu\common\hc32l19x.h
-.\objects\app_task.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h
-.\objects\app_task.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
-.\objects\app_task.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
-.\objects\app_task.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\app_task.o: C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h
+.\objects\app_task.o: C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\app_task.o: C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\app_task.o: C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
 .\objects\app_task.o: .\mcu\common\system_hc32l19x.h
 .\objects\app_task.o: .\driver\inc\sysctrl.h
 .\objects\app_task.o: .\driver\inc\ddl.h
@@ -35,3 +35,7 @@
 .\objects\app_task.o: .\hardware\hd_lptimer.h
 .\objects\app_task.o: .\driver\inc\gpio.h
 .\objects\app_task.o: .\hardware\hd_deepsleep.h
+.\objects\app_task.o: .\Midware\NRF24L01.h
+.\objects\app_task.o: .\hardware\hd_spi.h
+.\objects\app_task.o: .\driver\inc\spi.h
+.\objects\app_task.o: .\driver\inc\reset.h

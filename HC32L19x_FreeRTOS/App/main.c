@@ -154,9 +154,11 @@ int32_t main(void)
     clk_data = Sysctrl_GetHClkFreq();
     SystemCoreClockUpdate();
     Sysctrl_ClkSourceEnable(SysctrlClkRCL,TRUE);
-    delay1ms(5000);
+//    delay1ms(5000);
+//		App_LowPowerModeGpioSet();
 //    lptim_init();
-//    System_EnterDeepsleep();
+
+////    System_EnterDeepsleep();
 //    while(1){;}
     SysTick_Config(clk_data/1000);
     NVIC_EnableIRQ(SysTick_IRQn);
